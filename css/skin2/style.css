@@ -1,0 +1,165 @@
+.container {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#iview2 {
+	display: block;
+	width: 100%;
+	background: #d7d5d3;
+	position: initial;
+/*
+	position: relative;
+	height: 50%;
+	padding: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+*/
+
+	margin: 0;
+//	overflow: hidden;
+}
+
+#iview2 .iviewSlider {
+	display: block;
+//	width: 2240px;
+//	height: 1260px;
+//	width: 100%;
+	width: 1600px;
+	height: 900px;
+//	background-position-x: center !important;
+	overflow: hidden;
+//	border-radius: 4px;
+}
+
+
+#iview2 .iview-controlNav {
+	position: absolute;
+	bottom: 26px;
+	left: 50%;
+	margin-left: -140px;
+}
+
+#iview2 .iview-controlNav a {
+	text-indent: -9999px;
+}
+
+#iview2 .iview-controlNav a.iview-control {
+	padding: 0px;
+	float: left;
+	width: 30px;
+	height: 3px;
+//	background: url('../../img/bullets_2.png') no-repeat 0px 0px;
+	background-color: gray;
+	line-height: 0px;
+//	margin-right: 0px;
+}
+
+#iview2 .iview-controlNav a.iview-control.active, #iview2 .iview-controlNav a.iview-control:hover {
+//	background-position: 0px -11px;
+	background-color: black;
+}
+
+#iview2 div.iview-directionNav {
+	position: absolute;
+//	top: 150px;
+//	top: 50%;
+//	margin-top: -50px;
+	bottom: 46px;
+	left: 0;
+	z-index: 9;
+	width: 100%;
+}
+
+#iview2 div.iview-directionNav a {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	width: 38px;
+	height: 38px;
+	background-image: url(../../img/nav_arrow.png);
+	text-indent: -9999px;
+}
+
+#iview2 div.iview-directionNav a:active {
+}
+
+#iview2 div.iview-directionNav a.iview-nextNav {
+	margin-left: 150px;
+	background-position: 38px 38px;
+}
+
+#iview2 div.iview-directionNav a.iview-prevNav {
+	margin-left: -200px;
+	background-position: 0px 38px
+}
+#iview2 div.iview-directionNav a.iview-nextNav:hover, #iview2 div.iview-directionNav a.iview-prevNav:hover {
+	background-position-y: 0px;
+}
+
+.iview-caption {
+	background: url('../../img/caption-bg.png');
+	color: #FFF;
+	border-radius: 3px;
+	padding: 10px 15px;
+	font-family: Verdana;
+	font-size: 12px;
+	text-shadow: #000 1px 1px 0px;
+	cursor: auto;
+}
+
+.iview-caption.video-caption {
+	padding: 10px;
+}
+
+.iview-caption.caption1 {
+	text-shadow: none;
+}
+
+.iview-caption.caption2 {
+	background: #FFF;
+	color: #000;
+	text-shadow: none;
+}
+
+.iview-caption.caption3 {
+	background: #c4302b;
+	box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 15px 0px;
+	text-shadow: none;
+}
+
+.iview-caption.caption3 div {
+	line-height: 150%;
+	text-align: justify;
+}
+
+.iview-caption.caption4 {
+	background: #00b4ff;
+	font-size: 36px;
+	font-weight: bold;
+	text-shadow: none;
+}
+
+.iview-caption.caption5 {
+	background: #FFF;
+	color: #000;
+	font-size: 26px;
+	text-shadow: none;
+}
+
+#iview-preloader {
+	border: #666 1px solid;
+	width: 150px
+}
+
+#iview-preloader div {
+	background: #666;
+}
+

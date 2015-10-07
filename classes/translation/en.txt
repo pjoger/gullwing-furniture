@@ -1,0 +1,1 @@
+TableDescription=<p>A table is a form of furniture with a flat horizontal upper surface used to support objects, for storage, show, and/or manipulation.</p>
