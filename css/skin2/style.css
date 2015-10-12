@@ -43,7 +43,7 @@
 	position: absolute;
 	bottom: 26px;
 	left: 50%;
-	margin-left: -140px;
+	margin-left: -45px;
 }
 
 #iview2 .iview-controlNav a {
@@ -92,12 +92,12 @@
 }
 
 #iview2 div.iview-directionNav a.iview-nextNav {
-	margin-left: 150px;
+	margin-left: 60px;
 	background-position: 38px 38px;
 }
 
 #iview2 div.iview-directionNav a.iview-prevNav {
-	margin-left: -200px;
+	margin-left: -100px;
 	background-position: 0px 38px
 }
 #iview2 div.iview-directionNav a.iview-nextNav:hover, #iview2 div.iview-directionNav a.iview-prevNav:hover {

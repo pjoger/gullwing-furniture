@@ -9,7 +9,7 @@
 .prod_about{
 	width: 290px;
 	height: 100%;
-	background-color:black;
+	background-color: #444849;
 	color: white;
 	float: left;
 }
@@ -17,10 +17,12 @@
 .prod_about a.prod_close {
 	display:block;
 	position: absolute;
-	left: 274px;
-	width: 16px;
-	height: 16px;
-	font-size: 16px;
+	left: 290px;
+  top: 50%;
+  margin-top: -19px;
+	width: 19px;
+	height: 38px;
+  background-image: url(../../img/nav_close.png);
 }
 
 .prod_about .prod_logo{

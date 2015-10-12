@@ -63,7 +63,7 @@ function ShowPhoto(prefix,t){
 <div id="<?php echo $prod_info['prefix'] ?>prod" class="prod">
 	<div class="prod_about">
 		<?php if ($page == 'main'){ ?>
-			<a href="javascript:void(0)" onclick="$('#<?php echo $prod_info['prefix'] ?>prod').hide('slide', { direction: 'left' }, 'slow'); return false;" class="prod_close">x</a>
+			<a href="javascript:void(0)" onclick="$('#<?php echo $prod_info['prefix'] ?>prod').hide('slide', { direction: 'left' }, 'slow'); return false;" class="prod_close"></a>
 		<?php } else { ?>
 			<a href="/" class="prod_close">x</a>
 		<?php } ?>

@@ -65,13 +65,17 @@ switch ($page){
 		$title = 'Продукты - '.$translate->t($prod_info['title']);
 		$meta_d = $translate->t($prod_info['head_descr']);
 		$meta_kw = $translate->t($prod_info['head_keywords']);
+		$head_ext = '<link rel="stylesheet" href="css/prod.css" />';
 	break;
 	default:
 		$page = 'main';
 		$title = 'Главная';
 		$meta_d = 'Изготовление, доставка и установка мебели на заказ';
 		$meta_kw = 'элитная мебель для дома спальни гостиной';
-		$skin_css = 'css/skin2/style.css';
+		$head_ext = '
+			<link rel="stylesheet" href="css/skin2/style.css" />
+			<link rel="stylesheet" href="css/prod.css" />
+		';
 }
 ?>
 <html>
@@ -83,13 +87,9 @@ switch ($page){
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="css/iview.css" />
-		<?php
-			if (isset($skin_css)){
-				echo '<link rel="stylesheet" href="'.$skin_css.'" />';
-			}
-		?>
-		<link rel="stylesheet" href="css/skin2/style.css" />
-		<link rel="stylesheet" href="css/prod.css" />
+
+		<?php if (isset($head_ext)) echo $head_ext; ?>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <!--		<script src="js/jquery-1.7.1.min.js"></script> -->
