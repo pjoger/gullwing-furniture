@@ -43,7 +43,7 @@
 	position: absolute;
 	bottom: 26px;
 	left: 50%;
-	margin-left: -45px;
+	margin-left: -140px;
 }
 
 #iview2 .iview-controlNav a {
@@ -53,7 +53,7 @@
 #iview2 .iview-controlNav a.iview-control {
 	padding: 0px;
 	float: left;
-	width: 30px;
+	width: 90px;
 	height: 3px;
 //	background: url('../../img/bullets_2.png') no-repeat 0px 0px;
 	background-color: gray;
@@ -92,12 +92,12 @@
 }
 
 #iview2 div.iview-directionNav a.iview-nextNav {
-	margin-left: 60px;
+	margin-left: 150px;
 	background-position: 38px 38px;
 }
 
 #iview2 div.iview-directionNav a.iview-prevNav {
-	margin-left: -100px;
+	margin-left: -200px;
 	background-position: 0px 38px
 }
 #iview2 div.iview-directionNav a.iview-nextNav:hover, #iview2 div.iview-directionNav a.iview-prevNav:hover {
