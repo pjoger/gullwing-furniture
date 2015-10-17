@@ -35,7 +35,7 @@
 }
 
 .prod_about h1 {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: normal;
 	text-transform: uppercase;
 	font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
@@ -44,7 +44,7 @@
 	margin-top: 32px;
 }
 .prod_about .prod_text p {
-	font-size: 16px;
+	font-size: 15px;
 	font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
 	letter-spacing: 0.01em;
 }
