@@ -38,17 +38,20 @@
 	font-size: 24px;
 	font-weight: normal;
 	text-transform: uppercase;
+	font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
 }
 .prod_about .prod_text{
 	margin-top: 32px;
 }
 .prod_about .prod_text p {
 	font-size: 16px;
+	font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
+	letter-spacing: 0.01em;
 }
 
 .prod_about .prod_nav {
 	margin-top: 40px;
-	padding: 0 40px 0 32px;
+	padding: 0 32px 0 40px;
 }
 
 .prod_nav ul {

@@ -129,6 +129,7 @@ a:hover {
 	text-decoration: none;
 	cursor: pointer;
 	font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
+	letter-spacing: 0.01em;
 	font-size: 14px;
 	font-weight: normal;
 	text-align: center;
@@ -201,7 +202,7 @@ sup {
 
 .text_container h1 {
 	font-size: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 .text_container p {
 	font-size: 20px;

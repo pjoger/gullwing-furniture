@@ -1,1 +1,5 @@
 TableDescription=<p>A table is a form of furniture with a flat horizontal upper surface used to support objects, for storage, show, and/or manipulation.</p>
+Table1_Name=FIDEM (1800х1000)
+Table2_Name=LUXURIOSA (2000х1200)
+Table3_Name=SINGULARI (3200х2100)
+

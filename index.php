@@ -130,7 +130,7 @@ switch ($page){
 
 		<div id="cont">
 			<div id="header">
-				<h1><a href="/"><img src="img/logo.png" width="120"/></a></h1>
+				<h1><a href="/"><img src="img/logo.png" width="200"/></a></h1>
 				<div class="container">
 
 					<div id="nav">
