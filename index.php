@@ -85,6 +85,7 @@ switch ($page){
 		<meta name="keywords" content="<?php echo $meta_kw; ?>" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/img/favicon.ico" rel="shortcut icon">
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="css/iview.css" />
 
@@ -141,17 +142,17 @@ switch ($page){
 								<b><?php $translate->__('Products'); ?></b>
 								<ul>
 									<li>
-										<a href="/?page=prod&prod=table1" onclick="$('#table1_prod').show('slide', { direction: 'left' }, 'slow'); return false;">
+										<a href="/?page=prod&prod=table1"<?php if ($page == 'main'){ ?> onclick="$('#table1_prod').show('slide', { direction: 'left' }, 'slow'); return false;"<?php } ?>>
                       <?php $translate->__('Table1_Name'); ?>
                     </a>
 									</li>
 									<li>
-										<a href="/?page=prod&prod=table2" onclick="$('#table2_prod').show('slide', { direction: 'left' }, 'slow'); return false;">
+										<a href="/?page=prod&prod=table2"<?php if ($page == 'main'){ ?> onclick="$('#table2_prod').show('slide', { direction: 'left' }, 'slow'); return false;"<?php } ?>>
                       <?php $translate->__('Table2_Name'); ?>
                     </a>
 									</li>
 									<li>
-										<a href="/?page=prod&prod=table3" onclick="$('#table3_prod').show('slide', { direction: 'left' }, 'slow'); return false;">
+										<a href="/?page=prod&prod=table3"<?php if ($page == 'main'){ ?> onclick="$('#table3_prod').show('slide', { direction: 'left' }, 'slow'); return false;"<?php } ?>>
                       <?php $translate->__('Table3_Name'); ?>
                     </a>
 									</li>
