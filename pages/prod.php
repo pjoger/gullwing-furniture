@@ -65,11 +65,12 @@ function ShowPhoto(prefix,t){
 		<?php if ($page == 'main'){ ?>
 			<a href="javascript:void(0)" onclick="$('#<?php echo $prod_info['prefix'] ?>prod').hide('slide', { direction: 'left' }, 'slow'); return false;" class="prod_close"></a>
 		<?php } else { ?>
-			<a href="/" class="prod_close">x</a>
+			<a href="/" class="prod_close"></a>
 		<?php } ?>
 		<div class="prod_logo">
 			<a href="/"><img src="img/logo.png" width="160"/></a>
 		</div>
+      <div class="elastic_space"></div>
 		<div class="prod_descr">
 			<h1><?php $translate->__($prod_info['title']); ?></h1>
 			<div class="prod_text">
