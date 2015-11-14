@@ -102,11 +102,10 @@ a:hover {
 	color: #fff;
 }
 #header #nav {
-//	float: right;
 	border-left: 0;
-//	border-right: 1px solid #111;
-//	background: url(../img/topbar.png) repeat;
-	margin-top: 100px;
+  position: fixed;
+  top: 50%;
+	margin-top: -100px;
 }
 #header #nav li {
 	background-color: black;
