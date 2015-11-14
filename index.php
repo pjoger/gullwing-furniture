@@ -101,11 +101,13 @@ switch ($page){
 		<script>
 			$(document).ready(function(){
 				$('#iview2').iView({
-					fx: "fade",
+					fx: "slide-in-right",
 					pauseTime: 7000,
 					pauseOnHover: false,
 					directionNav: true,
 					directionNavHide: false,
+          captionSpeed: 0,
+          animationSpeed: 300,
 					controlNav: true,
 					controlNavNextPrev: false,
 					controlNavTooltip: false,

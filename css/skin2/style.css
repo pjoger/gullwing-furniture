@@ -105,13 +105,13 @@
 }
 
 .iview-caption {
-	background: url('../../img/caption-bg.png');
-	color: #FFF;
-	border-radius: 3px;
-	padding: 10px 15px;
-	font-family: Verdana;
-	font-size: 12px;
-	text-shadow: #000 1px 1px 0px;
+	//background: url('../../img/caption-bg.png');
+	//color: #FFF;
+	//border-radius: 3px;
+	//padding: 10px 15px;
+	//font-family: Verdana;
+	//font-size: 12px;
+	//text-shadow: #000 1px 1px 0px;
 	cursor: auto;
 }
 
