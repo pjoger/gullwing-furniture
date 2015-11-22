@@ -59,6 +59,10 @@ switch ($page){
 		$title = 'Наши контакты';
 		$meta_d = 'Описание страницы Наши контакты';
 		$meta_kw = 'Ключевые слова страницы Наши контакты';
+    $head_ext = '
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    ';
+	break;
 	case 'prod':
 		include ('pages/prod_info.php');
     switch_prod_info();
@@ -75,32 +79,14 @@ switch ($page){
 		$head_ext = '
 			<link rel="stylesheet" href="css/skin2/style.css" />
 			<link rel="stylesheet" href="css/prod.css" />
-		';
-}
-?>
-<html>
-	<head>
-		<title>Gullwing Furniture - <?php echo $title; ?></title>
-		<meta name="description" content="<?php echo $meta_d; ?>" />
-		<meta name="keywords" content="<?php echo $meta_kw; ?>" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="/img/favicon.ico" rel="shortcut icon">
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/iview.css" />
-
-		<?php if (isset($head_ext)) echo $head_ext; ?>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<!--		<script src="js/jquery-1.7.1.min.js"></script> -->
 		<script type="text/javascript" src="js/raphael-min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.js"></script>
 
 		<script src="js/iview.js"></script>
 		<script>
 			$(document).ready(function(){
-				$('#iview2').iView({
+				$("#iview2").iView({
 					fx: "slide-in-right",
 					pauseTime: 7000,
 					pauseOnHover: false,
@@ -126,6 +112,23 @@ switch ($page){
 				});
 			});
 		</script>
+		';
+}
+?>
+<html>
+	<head>
+		<title>Gullwing Furniture - <?php echo $title; ?></title>
+		<meta name="description" content="<?php echo $meta_d; ?>" />
+		<meta name="keywords" content="<?php echo $meta_kw; ?>" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/img/favicon.ico" rel="shortcut icon">
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/iview.css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <?php if (isset($head_ext)) { echo $head_ext; } ?>
 
 	</head>
 
