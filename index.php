@@ -60,6 +60,7 @@ switch ($page){
 		$meta_d = 'Описание страницы Наши контакты';
 		$meta_kw = 'Ключевые слова страницы Наши контакты';
     $head_ext = '
+      <link rel="stylesheet" href="css/prod.css" />
       <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     ';
 	break;

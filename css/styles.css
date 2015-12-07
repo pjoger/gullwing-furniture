@@ -5,7 +5,8 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	font-family: 'Ubuntu', Tahoma;
+	font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
+	letter-spacing: 0.05em;
 	line-height: 100%;
 	outline: none;
 }
@@ -127,8 +128,6 @@ a:hover {
 	border-right: 1px solid rgba(255, 255, 255, 0.05);
 	text-decoration: none;
 	cursor: pointer;
-	font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
-	letter-spacing: 0.01em;
 	font-size: 14px;
 	font-weight: normal;
 	text-align: center;

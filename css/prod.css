@@ -25,6 +25,7 @@
 	height: 38px;
   background-image: url(../../img/nav_close.png);
   opacity: 0.3;
+  z-index: 1;
 }
 .prod_about a.prod_close:hover {
   opacity: 1;
@@ -46,15 +47,12 @@
 	font-size: 22px;
 	font-weight: normal;
 	text-transform: uppercase;
-	font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
 }
 .prod_about .prod_text{
 	margin-top: 32px;
 }
 .prod_about .prod_text p {
 	font-size: 15px;
-	font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;
-	letter-spacing: 0.01em;
 }
 
 .prod_about .prod_nav {
