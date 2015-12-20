@@ -6,6 +6,7 @@ class Translator {
 	
 	public function __construct($language){
 		$this->language = $language;
+    $this->findLangs();
 	}
 	
   private function findString($str) {
@@ -19,7 +20,36 @@ class Translator {
     return explode('=',trim($str));
 	}
 	
-	public function t($str) {
+  private function findLangs(){
+    if (count($this->lang) == 0){
+      foreach (glob(dirname(__FILE__).'/translation/??.txt') as $file) {
+        if (preg_match('/\/([^\/]+)\.txt$/', $file, $l)){
+          $strings = array_map(array($this,'splitStrings'),file($file));
+          foreach ($strings as $v) {
+            if ($v[0]){
+              $this->lang[$l[1]][$v[0]] = $v[1];
+            }
+          }
+        }
+      }
+    }
+    return $this->lang;
+  }
+  
+  public function getLangs(){
+    // die (print_r($this->lang));
+    $ret = array();
+    foreach (array_keys($this->lang) as $k){
+      if ($k == $this->language){
+        array_unshift($ret,$k);
+      } else {
+        array_push($ret,$k);
+      }
+    }
+    return $ret;
+  }
+
+  public function t($str) {
     if (!array_key_exists($this->language, $this->lang)) {
     	$file = dirname(__FILE__).'/translation/'.$this->language.'.txt';
       if (file_exists($file)) {
@@ -38,7 +68,8 @@ class Translator {
 		}
 	}
 	public function __($str) {
-		echo $this->t($str);
+//		echo $this->t($str);
+		echo $this->findString($str);
 		return;
 	}
 }

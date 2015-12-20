@@ -175,10 +175,19 @@ switch ($page){
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container <?php echo $page; ?>">
 			    <?php
 			        include ('pages/'.$page.'.php');
 			    ?>
+        <ul id="lang">
+          <?php
+            foreach ($translate->getLangs() as $l){
+              $checked = '';
+              if ($lang == $l) { $checked = 'checked'; }
+              echo '<li class="'.$checked.'"><a href="/?page='.$page.'&lang='.$l.'">'.$l.'</a></li>';
+            }
+          ?>
+        </ul>
 			</div>
     </div>
 	</body>

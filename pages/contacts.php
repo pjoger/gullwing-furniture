@@ -16,9 +16,7 @@
 			</div>
 		</div>
   </div>
-  <div id="map" class="prod_photo" style="-webkit-filter: grayscale(100%); filter: grayscale(100%)">
-<!--    <div  style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; -webkit-filter: grayscale(100%)"></div> -->
-  </div>
+  <div id="map" class="prod_photo"></div>
 </div>
 
 <!--      <div id="map" style="width: 600px; height: 400px"></div> -->
@@ -27,7 +25,8 @@
   <script type="text/javascript">
     ymaps.ready(init);
 
-    function init(){     
+    function init(){
+      $("#map").addClass("grayscale");
       var gullwingMap = new ymaps.Map("map", {
         center: [55.762632, 37.615775],
         zoom: 15,
@@ -49,7 +48,16 @@
       var map = new google.maps.Map(document.getElementById('map'), {
         center: myLatLng,
         scrollwheel: false,
-        zoom: 15
+        zoom: 15,
+        styles: [{
+          featureType: "all",
+          stylers: [
+            {
+              //hue: "#cc2200",
+              saturation: -100 // серая карта
+            }
+          ]
+        }]
       });
 
       // Create a marker and set its position.
@@ -57,6 +65,11 @@
         map: map,
         position: myLatLng,
         title: 'gullwing'
+/*        attribution: {
+          source: 'gullwing',
+          webUrl: 'http://gullwing-furniture.com/'
+        }
+*/
       });
     }
   </script>
